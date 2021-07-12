@@ -3,8 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
-const Home = ({list}) => {
-	// const {cidade, estado} = props.Localizacao
+const MovieItem = ({list}) => {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -37,7 +36,7 @@ const Home = ({list}) => {
 	)
 }
 
-export default Home
+export default MovieItem
 
 export async function getServerSideProps(){
 	const res = await fetch('http://localhost:3000/api/trending ');
