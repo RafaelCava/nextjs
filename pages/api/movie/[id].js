@@ -6,7 +6,7 @@ export default async (req, res) => {
     const result = await fetch(`${apiBase}/movie/${id}?api_key=${apiKey}&language=pt-BR`)
     const json = await result.json()
 
-    
+    console.log("ola")
     res.status(200).json({
         info: json
      })
