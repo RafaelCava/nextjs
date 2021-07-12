@@ -1,9 +1,9 @@
 import Head from 'next/head'
-// import Image from 'next/image'
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
 
-const MovieItem = ({list}) => {
+// import Link from 'next/link'
+import styles from '../../styles/Home.module.css'
+
+const MovieItem = ({info}) => {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -13,24 +13,12 @@ const MovieItem = ({list}) => {
 			</Head>
 			<main className={styles.main}>
 				<h1 className={styles.title}>
-					Filmes em Destaque
+					{info.title}
 				</h1>
 
-				<Link href="/busca">Ir para a Busca</Link>
-
-
-					<ul>
-						{list.map(item => (
-							<li>
-								<a href={`/movie/${item.id}`}>
-								<img src={`https://image.tmdb.org/t/p/original${item.poster_path}`} width="150"/>
-								{item.title}
-								</a>
-							</li>
-						))}
-					</ul>
-
-
+				<p>Nota {info.vote_average}</p>
+				<p>{info.overview}</p>
+				<img src={`https://image.tmdb.org/t/p/original${info.backdrop_path}`} width="400" />
 			</main>
 		</div>
 	)
@@ -38,12 +26,13 @@ const MovieItem = ({list}) => {
 
 export default MovieItem
 
-export async function getServerSideProps(){
-	const res = await fetch('http://localhost:3000/api/trending ');
+export async function getServerSideProps(context){
+    let id = context.params.id
+	const res = await fetch(`http://localhost:3000/api/movie/${id}`);
 	const json = await res.json();
 	return{
 		props:{
-			list: json.list
+			info: json.info
 		}
 	}
 }
