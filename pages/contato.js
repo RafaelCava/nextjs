@@ -12,7 +12,6 @@ const contato = ()=>{
 			</Head>
 			<main className={styles.main}>
 				<h1 className={styles.title}>Fale Conosco</h1>
-				<a href="post/777">clique para ir</a>
 			</main>
 		</div>
 	)
