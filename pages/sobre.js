@@ -18,9 +18,9 @@ const Home = ({author}) => {
 				</h1>
 
                     o sistema foi feito em live para demostração do framework next.js
+                <hr />
 
-				<Link href="/busca">Ir para a Busca</Link>
-			    <Link href="/sobre">Sobre mim</Link>
+                    Autor: {author}
 			</main>
 		</div>
 	)
