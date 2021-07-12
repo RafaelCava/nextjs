@@ -17,10 +17,10 @@ const Home = ({author}) => {
 					Sobre o sistema
 				</h1>
 
-                    o sistema foi feito em live para demostração do framework next.js
-                <hr />
+          o sistema foi feito em live para demostração do framework next.js
+        <hr />
 
-                    Autor: {author}
+          Autor: {author}
 			</main>
 		</div>
 	)
