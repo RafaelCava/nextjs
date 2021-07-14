@@ -48,8 +48,10 @@ const Home = ({ list }) => {
             </li>
           ))}
         </ul>
-        <Link href="/">Inicio</Link>
       </main>
+      <footer className={styles.footer}>
+        <Link href="/">Inicio</Link>
+      </footer>
     </div>
   );
 };
