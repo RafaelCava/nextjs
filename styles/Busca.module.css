@@ -18,6 +18,7 @@
   border:0;
   background-color: #777;
   border-radius:15px;
+  outline: 0;
   margin-bottom: 2%;
 }
 
@@ -29,6 +30,7 @@
   border: 0;
   border-radius:10px;
   margin-bottom: 2%;
+  cursor: pointer;
 }
 
 .main ul{
@@ -39,11 +41,17 @@
 }
 
 .main li{
-  width:20%;
+  width:18%;
   text-align:center;
+  border:1px solid #555;
+  background-color: #333;
+  color:white;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .main a{
+  width:100%;
   display:flex;
   flex-flow:column wrap;
   margin-right: 20px;
@@ -51,6 +59,7 @@
 
 .main img{
   width: 100%;
+  margin-bottom: 5%;
 }
 
 .busca{

@@ -48,6 +48,7 @@ const Home = ({ list }) => {
             </li>
           ))}
         </ul>
+        <Link href="/">Inicio</Link>
       </main>
     </div>
   );
