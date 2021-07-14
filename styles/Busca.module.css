@@ -1,0 +1,61 @@
+.header{
+  display:flex;
+  flex-flow: column wrap;
+  justify-content:center;
+  align-items:center;
+}
+
+.header h1{
+  margin-bottom: 5%;
+}
+
+.header span{
+  color:tomato;
+}
+
+.header input{
+  padding:10px;
+  border:0;
+  background-color: #777;
+  border-radius:15px;
+  margin-bottom: 2%;
+}
+
+.header button{
+  padding: 10px 20px;
+  background-color: #999;
+  color:white;
+  text-transform: uppercase;
+  border: 0;
+  border-radius:10px;
+  margin-bottom: 2%;
+}
+
+.main ul{
+  display:flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  padding:20px;
+}
+
+.main li{
+  width:20%;
+  text-align:center;
+}
+
+.main a{
+  display:flex;
+  flex-flow:column wrap;
+  margin-right: 20px;
+}
+
+.main img{
+  width: 100%;
+}
+
+.busca{
+  display:flex;
+  justify-content:center;
+  margin-bottom: 5%;
+  font-size:1.5em;
+}
