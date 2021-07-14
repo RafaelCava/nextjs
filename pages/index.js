@@ -17,20 +17,7 @@ const Home = ({ list }) => (
       <h1 className={styles.title}>
         Filmes em Destaque
       </h1>
-
       <Link href="/busca">Ir para a Busca</Link>
-
-      <ul>
-        {list.map((item) => (
-          <li>
-            <a href={`/movie/${item.id}`}>
-              <img src={`https://image.tmdb.org/t/p/original${item.poster_path}`} width="150" />
-              {item.title}
-            </a>
-          </li>
-        ))}
-      </ul>
-
       <Link href="/sobre">Sobre mim</Link>
     </main>
   </div>
