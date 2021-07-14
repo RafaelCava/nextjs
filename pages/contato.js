@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/react-in-jsx-scope */
 import Head from 'next/head';
 // import Image from 'next/image'

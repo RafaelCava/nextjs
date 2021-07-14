@@ -18,6 +18,11 @@ const Home = ({ list }) => (
       <h1 className={styles.title}>
         Filmes em Destaque
       </h1>
+      <h1>
+        Assista em destaque TOP 1:
+        {' '}
+        {list[0].title}
+      </h1>
 
       <Link href="/busca">Ir para a Busca</Link>
 
