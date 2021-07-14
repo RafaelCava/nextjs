@@ -25,6 +25,7 @@
 @media screen and (max-width: 768px) {
     .header{
         flex-direction:column;
+        justify-content:center;
     }
     .logo{
         text-align:center;
