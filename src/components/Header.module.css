@@ -26,6 +26,9 @@
     .header{
         flex-direction:column;
     }
+    .logo{
+        text-align:center;
+    }    
     .header nav{
         flex-direction:column;
         align-items: center;
