@@ -1,0 +1,20 @@
+.header{
+    background-color: plum;
+    display:flex;
+    padding:30px 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav{
+    display:flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.header li{
+    margin-right: 20px;
+    color: rgb(54, 127, 156);
+    font-size:1.3em
+}
+
