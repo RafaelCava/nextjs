@@ -49,7 +49,7 @@ const Home = ({ list }) => (
 export default Home;
 
 export async function getServerSideProps() {
-  const res = await fetch('http://localhost:3000/api/trending ');
+  const res = await fetch('http://localhost:3000/api/trending');
   const json = await res.json();
   return {
     props: {

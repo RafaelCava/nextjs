@@ -43,7 +43,7 @@ const Home = ({ list }) => {
             <li>
               <a href={`/movie/${item.id}`}>
                 <img src={`https://image.tmdb.org/t/p/original${item.poster_path}`} width="150" />
-                {item.title}
+                <h3>{item.title}</h3>
               </a>
             </li>
           ))}

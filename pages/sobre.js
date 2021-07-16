@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/react-in-jsx-scope */
@@ -6,7 +7,7 @@ import Head from 'next/head';
 // import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
-const Home = ({ author }) => (
+const Home = (props) => (
   <div className={styles.container}>
     <Head>
       <title>Create Next App</title>
@@ -23,7 +24,7 @@ const Home = ({ author }) => (
 
       Autor:
       {' '}
-      {author}
+      {props.author}
     </main>
   </div>
 );
@@ -33,7 +34,7 @@ export default Home;
 export async function getStaticProps() {
   return {
     props: {
-      author: 'bonieky',
+      author: 'Rafael',
     },
   };
 }
