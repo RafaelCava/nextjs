@@ -7,7 +7,7 @@ import Head from 'next/head';
 // import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
-const Home = (props) => (
+const Home = ({ list }) => (
   <div className={styles.container}>
     <Head>
       <title>Create Next App</title>
@@ -24,7 +24,7 @@ const Home = (props) => (
 
       Autor:
       {' '}
-      {props.author}
+      {list.author[0]}
     </main>
   </div>
 );
@@ -34,7 +34,11 @@ export default Home;
 export async function getStaticProps() {
   return {
     props: {
-      author: 'Rafael',
+      list: {
+        author: ['rafael', 'joao'],
+        dias: ['segunda', 'terça'],
+      },
     },
+    revalidate: 10,
   };
 }

@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/prop-types */
